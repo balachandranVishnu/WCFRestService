@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="EmployeeImpl" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:52850/EmployeeServiceHost.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:52850/EmployeeServiceHost.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Harrods.Service.Employees.Entities" />
+      <xsd:import schemaLocation="http://localhost:52850/EmployeeServiceHost.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IEmployeeContract_CreateEmployee_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateEmployee" />
+  </wsdl:message>
+  <wsdl:message name="IEmployeeContract_CreateEmployee_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateEmployeeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEmployeeContract_CreateEmployee_ExceptionFaultContractFault_FaultMessage">
+    <wsdl:part xmlns:q1="http://schemas.datacontract.org/2004/07/Harrods.Service.Employees.Entities" name="detail" element="q1:ExceptionFaultContract" />
+  </wsdl:message>
+  <wsdl:message name="IEmployeeContract_UpdateEmployee_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateEmployee" />
+  </wsdl:message>
+  <wsdl:message name="IEmployeeContract_UpdateEmployee_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateEmployeeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEmployeeContract_UpdateEmployee_ExceptionFaultContractFault_FaultMessage">
+    <wsdl:part xmlns:q2="http://schemas.datacontract.org/2004/07/Harrods.Service.Employees.Entities" name="detail" element="q2:ExceptionFaultContract" />
+  </wsdl:message>
+  <wsdl:message name="IEmployeeContract_DeleteEmployee_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteEmployee" />
+  </wsdl:message>
+  <wsdl:message name="IEmployeeContract_DeleteEmployee_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteEmployeeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEmployeeContract_DeleteEmployee_ExceptionFaultContractFault_FaultMessage">
+    <wsdl:part xmlns:q3="http://schemas.datacontract.org/2004/07/Harrods.Service.Employees.Entities" name="detail" element="q3:ExceptionFaultContract" />
+  </wsdl:message>
+  <wsdl:message name="IEmployeeContract_GetEmployee_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmployee" />
+  </wsdl:message>
+  <wsdl:message name="IEmployeeContract_GetEmployee_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmployeeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEmployeeContract_GetEmployee_ExceptionFaultContractFault_FaultMessage">
+    <wsdl:part xmlns:q4="http://schemas.datacontract.org/2004/07/Harrods.Service.Employees.Entities" name="detail" element="q4:ExceptionFaultContract" />
+  </wsdl:message>
+  <wsdl:message name="IEmployeeContract_GetAllEmployees_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllEmployees" />
+  </wsdl:message>
+  <wsdl:message name="IEmployeeContract_GetAllEmployees_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllEmployeesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEmployeeContract_GetAllEmployees_ExceptionFaultContractFault_FaultMessage">
+    <wsdl:part xmlns:q5="http://schemas.datacontract.org/2004/07/Harrods.Service.Employees.Entities" name="detail" element="q5:ExceptionFaultContract" />
+  </wsdl:message>
+  <wsdl:message name="IEmployeeContract_UpdateAddress_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateAddress" />
+  </wsdl:message>
+  <wsdl:message name="IEmployeeContract_UpdateAddress_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateAddressResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEmployeeContract_UpdateAddress_ExceptionFaultContractFault_FaultMessage">
+    <wsdl:part xmlns:q6="http://schemas.datacontract.org/2004/07/Harrods.Service.Employees.Entities" name="detail" element="q6:ExceptionFaultContract" />
+  </wsdl:message>
+  <wsdl:message name="IEmployeeContract_DeleteAddress_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteAddress" />
+  </wsdl:message>
+  <wsdl:message name="IEmployeeContract_DeleteAddress_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteAddressResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEmployeeContract_DeleteAddress_ExceptionFaultContractFault_FaultMessage">
+    <wsdl:part xmlns:q7="http://schemas.datacontract.org/2004/07/Harrods.Service.Employees.Entities" name="detail" element="q7:ExceptionFaultContract" />
+  </wsdl:message>
+  <wsdl:message name="IEmployeeContract_GetAddress_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAddress" />
+  </wsdl:message>
+  <wsdl:message name="IEmployeeContract_GetAddress_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAddressResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEmployeeContract_GetAddress_ExceptionFaultContractFault_FaultMessage">
+    <wsdl:part xmlns:q8="http://schemas.datacontract.org/2004/07/Harrods.Service.Employees.Entities" name="detail" element="q8:ExceptionFaultContract" />
+  </wsdl:message>
+  <wsdl:portType name="IEmployeeContract">
+    <wsdl:operation name="CreateEmployee">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEmployeeContract/CreateEmployee" message="tns:IEmployeeContract_CreateEmployee_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEmployeeContract/CreateEmployeeResponse" message="tns:IEmployeeContract_CreateEmployee_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IEmployeeContract/CreateEmployeeExceptionFaultContractFault" name="ExceptionFaultContractFault" message="tns:IEmployeeContract_CreateEmployee_ExceptionFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateEmployee">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEmployeeContract/UpdateEmployee" message="tns:IEmployeeContract_UpdateEmployee_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEmployeeContract/UpdateEmployeeResponse" message="tns:IEmployeeContract_UpdateEmployee_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IEmployeeContract/UpdateEmployeeExceptionFaultContractFault" name="ExceptionFaultContractFault" message="tns:IEmployeeContract_UpdateEmployee_ExceptionFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteEmployee">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEmployeeContract/DeleteEmployee" message="tns:IEmployeeContract_DeleteEmployee_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEmployeeContract/DeleteEmployeeResponse" message="tns:IEmployeeContract_DeleteEmployee_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IEmployeeContract/DeleteEmployeeExceptionFaultContractFault" name="ExceptionFaultContractFault" message="tns:IEmployeeContract_DeleteEmployee_ExceptionFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployee">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEmployeeContract/GetEmployee" message="tns:IEmployeeContract_GetEmployee_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEmployeeContract/GetEmployeeResponse" message="tns:IEmployeeContract_GetEmployee_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IEmployeeContract/GetEmployeeExceptionFaultContractFault" name="ExceptionFaultContractFault" message="tns:IEmployeeContract_GetEmployee_ExceptionFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllEmployees">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEmployeeContract/GetAllEmployees" message="tns:IEmployeeContract_GetAllEmployees_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEmployeeContract/GetAllEmployeesResponse" message="tns:IEmployeeContract_GetAllEmployees_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IEmployeeContract/GetAllEmployeesExceptionFaultContractFault" name="ExceptionFaultContractFault" message="tns:IEmployeeContract_GetAllEmployees_ExceptionFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAddress">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEmployeeContract/UpdateAddress" message="tns:IEmployeeContract_UpdateAddress_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEmployeeContract/UpdateAddressResponse" message="tns:IEmployeeContract_UpdateAddress_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IEmployeeContract/UpdateAddressExceptionFaultContractFault" name="ExceptionFaultContractFault" message="tns:IEmployeeContract_UpdateAddress_ExceptionFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAddress">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEmployeeContract/DeleteAddress" message="tns:IEmployeeContract_DeleteAddress_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEmployeeContract/DeleteAddressResponse" message="tns:IEmployeeContract_DeleteAddress_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IEmployeeContract/DeleteAddressExceptionFaultContractFault" name="ExceptionFaultContractFault" message="tns:IEmployeeContract_DeleteAddress_ExceptionFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAddress">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEmployeeContract/GetAddress" message="tns:IEmployeeContract_GetAddress_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEmployeeContract/GetAddressResponse" message="tns:IEmployeeContract_GetAddress_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IEmployeeContract/GetAddressExceptionFaultContractFault" name="ExceptionFaultContractFault" message="tns:IEmployeeContract_GetAddress_ExceptionFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="MyBasicHttpBinding_IEmployeeContract" type="tns:IEmployeeContract">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CreateEmployee">
+      <soap:operation soapAction="http://tempuri.org/IEmployeeContract/CreateEmployee" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ExceptionFaultContractFault">
+        <soap:fault use="literal" name="ExceptionFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateEmployee">
+      <soap:operation soapAction="http://tempuri.org/IEmployeeContract/UpdateEmployee" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ExceptionFaultContractFault">
+        <soap:fault use="literal" name="ExceptionFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteEmployee">
+      <soap:operation soapAction="http://tempuri.org/IEmployeeContract/DeleteEmployee" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ExceptionFaultContractFault">
+        <soap:fault use="literal" name="ExceptionFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployee">
+      <soap:operation soapAction="http://tempuri.org/IEmployeeContract/GetEmployee" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ExceptionFaultContractFault">
+        <soap:fault use="literal" name="ExceptionFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllEmployees">
+      <soap:operation soapAction="http://tempuri.org/IEmployeeContract/GetAllEmployees" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ExceptionFaultContractFault">
+        <soap:fault use="literal" name="ExceptionFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAddress">
+      <soap:operation soapAction="http://tempuri.org/IEmployeeContract/UpdateAddress" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ExceptionFaultContractFault">
+        <soap:fault use="literal" name="ExceptionFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAddress">
+      <soap:operation soapAction="http://tempuri.org/IEmployeeContract/DeleteAddress" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ExceptionFaultContractFault">
+        <soap:fault use="literal" name="ExceptionFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetAddress">
+      <soap:operation soapAction="http://tempuri.org/IEmployeeContract/GetAddress" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ExceptionFaultContractFault">
+        <soap:fault use="literal" name="ExceptionFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="EmployeeImpl">
+    <wsdl:port name="MyBasicHttpBinding_IEmployeeContract" binding="tns:MyBasicHttpBinding_IEmployeeContract">
+      <soap:address location="http://localhost:52850/EmployeeServiceHost.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

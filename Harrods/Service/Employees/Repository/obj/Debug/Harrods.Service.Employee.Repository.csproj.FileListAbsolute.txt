@@ -1,0 +1,7 @@
+D:\Programming\Microsoft\Harrods\Service\Employee\Binaries\Harrods.Service.Employee.Repository.dll
+D:\Programming\Microsoft\Harrods\Service\Employee\Binaries\Harrods.Service.Employee.Repository.pdb
+D:\Programming\Microsoft\Harrods\Service\Employee\Repository\Harrods.Service.Employee.Repository\obj\Debug\Harrods.Service.Employee.Repository.csproj.CoreCompileInputs.cache
+D:\Programming\Microsoft\Harrods\Service\Employee\Repository\Harrods.Service.Employee.Repository\obj\Debug\Harrods.Service.Employee.Repository.dll
+D:\Programming\Microsoft\Harrods\Service\Employee\Repository\Harrods.Service.Employee.Repository\obj\Debug\Harrods.Service.Employee.Repository.pdb
+D:\Programming\Microsoft\Harrods\Service\Employee\Binaries\Harrods.Service.Employee.Repository.dll.config
+D:\Programming\Microsoft\Harrods\Service\Employee\Repository\Harrods.Service.Employee.Repository\obj\Debug\Harrods.Service.Employee.Repository.csproj.CopyComplete

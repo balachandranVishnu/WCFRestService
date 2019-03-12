@@ -1,0 +1,159 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.438
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service", "Service", "{5349CF65-50CE-4613-A36A-3097F3067852}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataAccess", "DataAccess", "{CCABA937-66F1-4526-A962-19C1AB4B85A4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Bussiness", "Bussiness", "{CDC2DA46-D380-4762-B199-9A76AE2AEC02}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Harrods.Service.Employees.Bussiness", "Bussiness\Harrods.Service.Employees.Bussiness.csproj", "{1AB4F213-AB22-4DFD-917B-083D38EC07B6}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B4650388-7391-46C0-9C07-B1A32C38982E} = {B4650388-7391-46C0-9C07-B1A32C38982E}
+		{B63B7EF4-D1E0-4E19-808A-25F610BF7B59} = {B63B7EF4-D1E0-4E19-808A-25F610BF7B59}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Harrods.Service.Employees.GenericRepository", "GenericRepository\Harrods.Service.Employees.GenericRepository.csproj", "{9AE652C5-5F0B-4636-9CB5-B3561BC25BB1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Harrods.Service.Employees.Repository", "Repository\Harrods.Service.Employees.Repository.csproj", "{B63B7EF4-D1E0-4E19-808A-25F610BF7B59}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9AE652C5-5F0B-4636-9CB5-B3561BC25BB1} = {9AE652C5-5F0B-4636-9CB5-B3561BC25BB1}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Harrods.Service.Employees.Contracts", "Contracts\Harrods.Service.Employees.Contracts.csproj", "{B00C6485-29CC-446D-9AFB-787B8D36E5D0}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F110CB05-AEBB-4C5C-8B76-6C87F5504525} = {F110CB05-AEBB-4C5C-8B76-6C87F5504525}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Harrods.Service.Employees.Entities", "Entities\Harrods.Service.Employees.Entities.csproj", "{F110CB05-AEBB-4C5C-8B76-6C87F5504525}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Harrods.Service.Employees.Facade", "Facade\Harrods.Service.Employees.Facade.csproj", "{4FEA502D-8B5B-4F37-8103-1059B36EE6D5}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1AB4F213-AB22-4DFD-917B-083D38EC07B6} = {1AB4F213-AB22-4DFD-917B-083D38EC07B6}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Harrods.Service.Employees.Implementation", "Implementation\Harrods.Service.Employees.Implementation.csproj", "{6395E5D3-0FEF-4969-AD34-A9EC91B6C420}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F110CB05-AEBB-4C5C-8B76-6C87F5504525} = {F110CB05-AEBB-4C5C-8B76-6C87F5504525}
+		{4FEA502D-8B5B-4F37-8103-1059B36EE6D5} = {4FEA502D-8B5B-4F37-8103-1059B36EE6D5}
+		{B00C6485-29CC-446D-9AFB-787B8D36E5D0} = {B00C6485-29CC-446D-9AFB-787B8D36E5D0}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Harrods.Service.Employees.Host", "Host\Harrods.Service.Employees.Host.csproj", "{23000515-D22B-4A89-AB7D-9B20C9D6B5C4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6395E5D3-0FEF-4969-AD34-A9EC91B6C420} = {6395E5D3-0FEF-4969-AD34-A9EC91B6C420}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Client", "Client", "{1C157551-A382-4CAB-A1B0-209E550B1663}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Proxy", "Proxy", "{5B4C8888-B003-4420-B551-15CF8BFB31F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Harrods.Proxy.Employees.ServiceProxy", "..\..\Proxy\Employees\Harrods.Proxy.Employees.ServiceProxy\Harrods.Proxy.Employees.ServiceProxy.csproj", "{4E783109-B5D4-485E-BD92-D17892FDE99F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{23000515-D22B-4A89-AB7D-9B20C9D6B5C4} = {23000515-D22B-4A89-AB7D-9B20C9D6B5C4}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Harrods.Client.Employees.ConsoleUI", "..\..\Client\Employees\Console\Harrods.Client.Employees.ConsoleUI.csproj", "{26BECF95-642D-4D3F-BAF8-85CE6E95430E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4E783109-B5D4-485E-BD92-D17892FDE99F} = {4E783109-B5D4-485E-BD92-D17892FDE99F}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Server", "Server", "{5023BD52-F065-4D45-8FBB-CCE18DBE4CD1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTests", "UnitTests", "{07B23185-9EF7-45E7-9D7A-81566364265F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Harrods.Service.Employees.UnitTest", "..\..\Tests\Employees\UnitTest\Harrods.Service.Employees.UnitTest.csproj", "{9E4849EA-4A28-477E-BC3E-95B94B11FFFB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Harrods.Service.Employees.BussinessValidations", "BussinessValidations\Harrods.Service.Employees.BussinessValidations.csproj", "{B4650388-7391-46C0-9C07-B1A32C38982E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F110CB05-AEBB-4C5C-8B76-6C87F5504525} = {F110CB05-AEBB-4C5C-8B76-6C87F5504525}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Harrods.Service.Employees.Tests", "..\..\Tests\Employees\ProxyUnitTest\Harrods.Service.Employees.Tests.csproj", "{2AD81CA0-3236-4E5A-A515-666789D43218}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1AB4F213-AB22-4DFD-917B-083D38EC07B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AB4F213-AB22-4DFD-917B-083D38EC07B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AB4F213-AB22-4DFD-917B-083D38EC07B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AB4F213-AB22-4DFD-917B-083D38EC07B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9AE652C5-5F0B-4636-9CB5-B3561BC25BB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AE652C5-5F0B-4636-9CB5-B3561BC25BB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AE652C5-5F0B-4636-9CB5-B3561BC25BB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AE652C5-5F0B-4636-9CB5-B3561BC25BB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B63B7EF4-D1E0-4E19-808A-25F610BF7B59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B63B7EF4-D1E0-4E19-808A-25F610BF7B59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B63B7EF4-D1E0-4E19-808A-25F610BF7B59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B63B7EF4-D1E0-4E19-808A-25F610BF7B59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B00C6485-29CC-446D-9AFB-787B8D36E5D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B00C6485-29CC-446D-9AFB-787B8D36E5D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B00C6485-29CC-446D-9AFB-787B8D36E5D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B00C6485-29CC-446D-9AFB-787B8D36E5D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F110CB05-AEBB-4C5C-8B76-6C87F5504525}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F110CB05-AEBB-4C5C-8B76-6C87F5504525}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F110CB05-AEBB-4C5C-8B76-6C87F5504525}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F110CB05-AEBB-4C5C-8B76-6C87F5504525}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FEA502D-8B5B-4F37-8103-1059B36EE6D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FEA502D-8B5B-4F37-8103-1059B36EE6D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FEA502D-8B5B-4F37-8103-1059B36EE6D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FEA502D-8B5B-4F37-8103-1059B36EE6D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6395E5D3-0FEF-4969-AD34-A9EC91B6C420}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6395E5D3-0FEF-4969-AD34-A9EC91B6C420}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6395E5D3-0FEF-4969-AD34-A9EC91B6C420}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6395E5D3-0FEF-4969-AD34-A9EC91B6C420}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23000515-D22B-4A89-AB7D-9B20C9D6B5C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23000515-D22B-4A89-AB7D-9B20C9D6B5C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23000515-D22B-4A89-AB7D-9B20C9D6B5C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23000515-D22B-4A89-AB7D-9B20C9D6B5C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E783109-B5D4-485E-BD92-D17892FDE99F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E783109-B5D4-485E-BD92-D17892FDE99F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E783109-B5D4-485E-BD92-D17892FDE99F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E783109-B5D4-485E-BD92-D17892FDE99F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26BECF95-642D-4D3F-BAF8-85CE6E95430E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26BECF95-642D-4D3F-BAF8-85CE6E95430E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26BECF95-642D-4D3F-BAF8-85CE6E95430E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26BECF95-642D-4D3F-BAF8-85CE6E95430E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E4849EA-4A28-477E-BC3E-95B94B11FFFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E4849EA-4A28-477E-BC3E-95B94B11FFFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E4849EA-4A28-477E-BC3E-95B94B11FFFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E4849EA-4A28-477E-BC3E-95B94B11FFFB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4650388-7391-46C0-9C07-B1A32C38982E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4650388-7391-46C0-9C07-B1A32C38982E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4650388-7391-46C0-9C07-B1A32C38982E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4650388-7391-46C0-9C07-B1A32C38982E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AD81CA0-3236-4E5A-A515-666789D43218}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AD81CA0-3236-4E5A-A515-666789D43218}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AD81CA0-3236-4E5A-A515-666789D43218}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AD81CA0-3236-4E5A-A515-666789D43218}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CCABA937-66F1-4526-A962-19C1AB4B85A4} = {5023BD52-F065-4D45-8FBB-CCE18DBE4CD1}
+		{CDC2DA46-D380-4762-B199-9A76AE2AEC02} = {5023BD52-F065-4D45-8FBB-CCE18DBE4CD1}
+		{1AB4F213-AB22-4DFD-917B-083D38EC07B6} = {CDC2DA46-D380-4762-B199-9A76AE2AEC02}
+		{9AE652C5-5F0B-4636-9CB5-B3561BC25BB1} = {CCABA937-66F1-4526-A962-19C1AB4B85A4}
+		{B63B7EF4-D1E0-4E19-808A-25F610BF7B59} = {CCABA937-66F1-4526-A962-19C1AB4B85A4}
+		{B00C6485-29CC-446D-9AFB-787B8D36E5D0} = {5349CF65-50CE-4613-A36A-3097F3067852}
+		{F110CB05-AEBB-4C5C-8B76-6C87F5504525} = {5349CF65-50CE-4613-A36A-3097F3067852}
+		{4FEA502D-8B5B-4F37-8103-1059B36EE6D5} = {5349CF65-50CE-4613-A36A-3097F3067852}
+		{6395E5D3-0FEF-4969-AD34-A9EC91B6C420} = {5349CF65-50CE-4613-A36A-3097F3067852}
+		{23000515-D22B-4A89-AB7D-9B20C9D6B5C4} = {5349CF65-50CE-4613-A36A-3097F3067852}
+		{4E783109-B5D4-485E-BD92-D17892FDE99F} = {5B4C8888-B003-4420-B551-15CF8BFB31F3}
+		{26BECF95-642D-4D3F-BAF8-85CE6E95430E} = {1C157551-A382-4CAB-A1B0-209E550B1663}
+		{9E4849EA-4A28-477E-BC3E-95B94B11FFFB} = {07B23185-9EF7-45E7-9D7A-81566364265F}
+		{B4650388-7391-46C0-9C07-B1A32C38982E} = {CDC2DA46-D380-4762-B199-9A76AE2AEC02}
+		{2AD81CA0-3236-4E5A-A515-666789D43218} = {07B23185-9EF7-45E7-9D7A-81566364265F}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.Validation.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.Validation.Integration.WCF.6.0.1304.0\lib\NET45
+		SolutionGuid = {0F94B967-E706-4E53-9DAE-DDCB9E6E5C08}
+	EndGlobalSection
+EndGlobal

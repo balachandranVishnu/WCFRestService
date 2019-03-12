@@ -1,0 +1,73 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.438
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Harrods.Service.Employee.Contracts", "..\..\Contracts\Harrods.Employee.Contracts\Harrods.Service.Employee.Contracts.csproj", "{B00C6485-29CC-446D-9AFB-787B8D36E5D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Harrods.Service.Employee.Entities", "..\..\Entities\Harrods.Service.Employee.Entities\Harrods.Service.Employee.Entities.csproj", "{F110CB05-AEBB-4C5C-8B76-6C87F5504525}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Harrods.Service.Employee.Facade", "..\..\Facade\Harrods.Service.Employee.Facade\Harrods.Service.Employee.Facade.csproj", "{4FEA502D-8B5B-4F37-8103-1059B36EE6D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Harrods.Service.Employee.Repository", "..\..\Repository\Harrods.Service.Employee.Repository\Harrods.Service.Employee.Repository.csproj", "{B63B7EF4-D1E0-4E19-808A-25F610BF7B59}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Harrods.Service.Employee.Implementation", "..\..\Implementation\Harrods.Service.Employee.Implementation\Harrods.Service.Employee.Implementation.csproj", "{6395E5D3-0FEF-4969-AD34-A9EC91B6C420}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Harrods.Employee.Service.GenericRepository", "..\..\GenericRepository\Harrods.Employee.Service.GenericRepository\Harrods.Employee.Service.GenericRepository.csproj", "{9AE652C5-5F0B-4636-9CB5-B3561BC25BB1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DAL", "DAL", "{4C2DC393-22ED-438B-9618-395901D76645}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WCFService", "WCFService", "{5E9D9A7E-1504-454E-AFCE-6DE4E4F490DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Harrods.Service.Employee.Bussiness", "..\..\Bussiness\Harrods.Service.Employee.Bussiness\Harrods.Service.Employee.Bussiness.csproj", "{1AB4F213-AB22-4DFD-917B-083D38EC07B6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B00C6485-29CC-446D-9AFB-787B8D36E5D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B00C6485-29CC-446D-9AFB-787B8D36E5D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B00C6485-29CC-446D-9AFB-787B8D36E5D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B00C6485-29CC-446D-9AFB-787B8D36E5D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F110CB05-AEBB-4C5C-8B76-6C87F5504525}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F110CB05-AEBB-4C5C-8B76-6C87F5504525}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F110CB05-AEBB-4C5C-8B76-6C87F5504525}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F110CB05-AEBB-4C5C-8B76-6C87F5504525}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FEA502D-8B5B-4F37-8103-1059B36EE6D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FEA502D-8B5B-4F37-8103-1059B36EE6D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FEA502D-8B5B-4F37-8103-1059B36EE6D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FEA502D-8B5B-4F37-8103-1059B36EE6D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B63B7EF4-D1E0-4E19-808A-25F610BF7B59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B63B7EF4-D1E0-4E19-808A-25F610BF7B59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B63B7EF4-D1E0-4E19-808A-25F610BF7B59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B63B7EF4-D1E0-4E19-808A-25F610BF7B59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6395E5D3-0FEF-4969-AD34-A9EC91B6C420}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6395E5D3-0FEF-4969-AD34-A9EC91B6C420}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6395E5D3-0FEF-4969-AD34-A9EC91B6C420}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6395E5D3-0FEF-4969-AD34-A9EC91B6C420}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9AE652C5-5F0B-4636-9CB5-B3561BC25BB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AE652C5-5F0B-4636-9CB5-B3561BC25BB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AE652C5-5F0B-4636-9CB5-B3561BC25BB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AE652C5-5F0B-4636-9CB5-B3561BC25BB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AB4F213-AB22-4DFD-917B-083D38EC07B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AB4F213-AB22-4DFD-917B-083D38EC07B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AB4F213-AB22-4DFD-917B-083D38EC07B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AB4F213-AB22-4DFD-917B-083D38EC07B6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B00C6485-29CC-446D-9AFB-787B8D36E5D0} = {5E9D9A7E-1504-454E-AFCE-6DE4E4F490DF}
+		{F110CB05-AEBB-4C5C-8B76-6C87F5504525} = {5E9D9A7E-1504-454E-AFCE-6DE4E4F490DF}
+		{4FEA502D-8B5B-4F37-8103-1059B36EE6D5} = {5E9D9A7E-1504-454E-AFCE-6DE4E4F490DF}
+		{B63B7EF4-D1E0-4E19-808A-25F610BF7B59} = {4C2DC393-22ED-438B-9618-395901D76645}
+		{6395E5D3-0FEF-4969-AD34-A9EC91B6C420} = {5E9D9A7E-1504-454E-AFCE-6DE4E4F490DF}
+		{9AE652C5-5F0B-4636-9CB5-B3561BC25BB1} = {4C2DC393-22ED-438B-9618-395901D76645}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0F94B967-E706-4E53-9DAE-DDCB9E6E5C08}
+	EndGlobalSection
+EndGlobal
